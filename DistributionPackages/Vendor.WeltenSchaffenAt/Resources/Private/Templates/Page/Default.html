@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<html>
+<head>
+	<f:section name="stylesheets">
+		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
+		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Main.css', package: 'Vendor.WeltenSchaffenAt')}" media="all" />
+	</f:section>
+
+	<f:section name="headScripts">
+		<!-- Put your scripts inclusions for the head here, they will be included in your website by Fusion -->
+	</f:section>
+</head>
+<body>
+<f:section name="body">
+
+	<div class="header">
+		<div class="wrapper">
+				<div class="box boxSocial">
+					<img src="../../Public/Icons/logo-facebook.svg" />
+					<img src="../../Public/Icons/logo-instagram.svg" />
+					<img src="../../Public/Icons/logo-vimeo.png" />
+				</div>
+				<div class="box box1">
+					<nav class="menu">
+						{parts.menu -> f:format.raw()}
+					</nav>
+				</div>
+				<div class="inner-grid">
+					<div class="inner-box1"><img src="../../Public/Images/WS_Logo_quer_schwarz.png" /></div>
+					<div class="inner-box2"></div>
+				</div>
+				<div class="box box2">
+					<div class="inner-box1"><p>Salzburg ist großes Kino</p></div>
+					<div class="inner-box2">
+						<hr />
+							<p>und Filme unsere Leidenschaft.</p>
+					</div>
+				</div>
+				<div class="box box3">
+					<div class="inner-box1"><p>Zu den Videos</p></div>
+					<div class="inner-box2"><div><img src="../../Public/Icons/play.svg" /></div></div>
+				</div>
+			</div>
+	</div>
+
+
+	<div class="content">
+
+		<div class="wrapper">
+			<div class="box box1">
+				<p class="bigletter">W</p>
+				<p>
+					Wir, das Future Cinema Filmdepartment des
+					Studiengangs MultiMediaArt, produzieren das Kino der Zukunft. Ideen, Know-How und Leidenschaft legen den Grundstein für die Gestaltung der
+					Salzburger Filmlandschaft. Es fehlt nur eines: <br />
+					Ihre Unterstützung.<br /><br />
+
+					Die Kampagne „Welten schaffen“  ist eine aktive
+					Kooperation zwischen regionalen Unternehmen
+					und dem kreativen Know-How der
+					Filmstudierenden.
+				</p>
+				<p class="nextup">Denn...</p>
+
+			</div>
+			<div class="box boxline">
+
+			</div>
+			<div class="box box2">
+				<p>
+					Eine Initiative zur
+					Filmförderung der
+					Fachhochschule
+					Salzburg.
+				</p>
+			</div>
+			<div class="box box3">
+				<div class="box-bg"></div>
+			</div>
+			<div class="box box3-b">
+				<p>
+					... Salzburg<br />
+					ohne<br />
+					Kulturist<br />
+					wie<br />
+					Mozart<br />
+					ohne<br />
+					Instrument.
+				</p>
+			</div>
+
+			<div class="box boxline2"></div>
+
+			<div class="box boxline3"></div>
+
+			<div class="box boxline4"></div>
+			<div class="box box4"></div>
+			<div class="box box5"></div>
+
+			<div class="box boxline5"></div>
+			<div class="box box6"></div>
+			<div class="box box7"></div>
+
+			<div class="box box8"></div>
+
+			<!-- <div class="box box9"></div> -->
+
+
+
+
+
+
+		</div>
+
+
+
+		<!-- {content.main -> f:format.raw()} -->
+
+	<f:comment>
+		If you enabled the "sidebar" content area in your NodeType configuration and Fusion, you can uncomment this
+		section to actually render in in your output. Remove the "f:comment" tag and this text, and adjust the markup as you
+		like.
+
+		{content.sidebar -> f:format.raw()}
+	</f:comment>
+
+	</div>
+</f:section>
+<f:section name="bodyScripts">
+	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
+</f:section>
+</body>
+</html>

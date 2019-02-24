@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "vendor/weltenschaffenat",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\WeltenSchaffenAt\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Vendor.WeltenSchaffenAt"
+        }
+    }
+}
