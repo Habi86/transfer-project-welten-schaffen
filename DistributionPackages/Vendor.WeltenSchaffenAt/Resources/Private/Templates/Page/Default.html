@@ -6,6 +6,8 @@
 	<f:section name="stylesheets">
 		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
 		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Main.css', package: 'Vendor.WeltenSchaffenAt')}" media="all" />
+		<link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'Neos.Twitter.Bootstrap')}" media="all" />
+
 	</f:section>
 
 	<f:section name="headScripts">
@@ -52,7 +54,7 @@
 			<div class="box box1">
 				<p class="bigletter">W</p>
 				<p class="text">
-					Wir, das Future Cinema Filmdepartment des
+					<!-- Wir, das Future Cinema Filmdepartment des
 					Studiengangs MultiMediaArt, produzieren das Kino der Zukunft. Ideen, Know-How und Leidenschaft legen den Grundstein für die Gestaltung der
 					Salzburger Filmlandschaft. Es fehlt nur eines: <br />
 					<strong>Ihre Unterstützung.</strong><br /><br />
@@ -60,7 +62,14 @@
 					Die Kampagne „Welten schaffen“  ist eine aktive
 					Kooperation zwischen regionalen Unternehmen
 					und dem kreativen Know-How der
-					Filmstudierenden.
+					Filmstudierenden. -->
+					<neos:contentElement.wrap>
+								<neos:contentElement.editable property="box-1-txt"/>
+						</neos:contentElement.wrap>
+
+					<!-- {neos:contentElement.editable(property: 'box-1-txt')} -->
+
+
 				</p>
 				<p class="middleBold">Denn...</p>
 
@@ -168,15 +177,14 @@
 			</div>
 			<div class="box box10">
 					<p>Mach mit!</p>
-				</div>
-
-
-
-
-
+			</div>
 
 		</div>
 
+
+		<div class="paypal">
+					<img src="../../Public/Icons/paying.png" />
+		</div>
 
 
 		<!-- AWARDS -->
@@ -234,14 +242,15 @@
 
 
 		<!-- {content.main -> f:format.raw()} -->
+		{content.carouselItems -> f:format.raw()}
 
-	<f:comment>
+	<!-- <f:comment>
 		If you enabled the "sidebar" content area in your NodeType configuration and Fusion, you can uncomment this
 		section to actually render in in your output. Remove the "f:comment" tag and this text, and adjust the markup as you
 		like.
 
 		{content.sidebar -> f:format.raw()}
-	</f:comment>
+	</f:comment> -->
 
 	</div>
 
@@ -258,6 +267,8 @@
 <f:section name="bodyScripts">
 	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+	<!-- <script src="{f:uri.resource(path: '3/js/bootstrap.min.js', package: 'Neos.Twitter.Bootstrap')}"></script> -->
+
 	<script>
 	// var scene = new ScrollMagic.Scene({})
 	// var start = scene.scrollOffset();

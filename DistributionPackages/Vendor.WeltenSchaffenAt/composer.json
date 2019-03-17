@@ -3,7 +3,8 @@
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
-        "neos/nodetypes": "*"
+        "neos/nodetypes": "*",
+        "jonnitto/plyr": "^2.2"
     },
     "suggest": {
         "neos/seo": "*"

@@ -7,9 +7,30 @@
   ui:
     icon: 'icon-file'
     label: 'Vendor.WeltenSchaffenAt Custom Page'
+  properties:
+    box-1-txt:
+      type: string
+      defaultValue: 'Replace by your subheadline value ...'
+      ui:
+        label: 'box-1-txt'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
+
+'Vendor.WeltenSchaffenAt:Carousel':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  childNodes:
+    carouselItems:
+      type: 'Neos.Neos:ContentCollection'
+  ui:
+    label: 'Carousel'
+    group: 'plugins'
+    icon: 'icon-picture'
+    inlineEditable: TRUE
+
 
 # If you need more than just the "main" content area you can uncomment the snippet below. It will add a "sidebar" area
 # to your pages. You can add as many areas as you like, still only those that are rendered in your Fusion code and

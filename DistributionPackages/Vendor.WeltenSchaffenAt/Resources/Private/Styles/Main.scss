@@ -12,8 +12,10 @@ p,a {
     transform: scale(1, 0.75);
 }
 
+body {
+    line-height: inherit !important //from bootstrap ..
+}
 .header {
-
     margin-bottom: 40px;
 
 * {box-sizing: border-box;}
@@ -207,6 +209,15 @@ p,a {
 
 }
 
+// Paypal
+.paypal {
+    margin-top: 10px;
+    img {
+        display: block;
+        width: 120px;
+        margin: 0 auto;
+    }
+}
 
 //   Contact us Box
 .contact-us {
