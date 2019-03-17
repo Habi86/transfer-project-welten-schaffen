@@ -262,14 +262,16 @@ p,a {
     width: 500px;
     margin: 100px auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    grid-gap: 10px;
 
-    .elements {
-        border: 1px solid black;
-        display: inline-block;
-
+    p {
+        font-size: 10px;
     }
     img {
-        width: 80px;
+        width: 70px;
     }
 }
 
@@ -286,10 +288,10 @@ p,a {
         font-family: "Roboto Condensed Light";
         color: white;
         text-transform: uppercase;
+        font-size: 14px;
 
         &.heading {
-            font-family: "Roboto Condensed Bold";
-            transform: inherit;
+            font-family: "Roboto Condensed";
         }
         &.sub {
             margin-bottom: 10px;
@@ -301,6 +303,7 @@ p,a {
         font-family: "Roboto Condensed Light";
         font-size: 12px;
         margin-top: 10px;
+        padding: 5px;
 
         &:link {
             text-decoration: none;
