@@ -13,19 +13,20 @@
     }
 
     .wrapper {
-        border: 2px solid #f76707;
+        // border: 2px solid #f76707;
     }
     .box {
-        border: 1px solid #ffa94d;
-        color: #d9480f;
+        // border: 1px solid #ffa94d;
+        // color: #d9480f;
     }
 
     .bigletter {
         color: $main-red;
-        line-height: 125px;
+        line-height: 131px;
         font-family: "Rockwell bold";
         font-size: 200px;
         margin-bottom: 20px;
+        transform: inherit;
     }
 
     .box1 {
@@ -33,12 +34,34 @@
         grid-column: 1 / span 3;
         grid-row: 1 / span 4;
 
+        .text {
+            margin-top: -20px;
+        }
+        .middleBold {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    }
+
+    .arrowbox {
+        background: white;
+        height: 40px;
+        grid-column: 4 / span 1;
+        grid-row: 1 / span 1;
     }
 
     .boxline {
-        background: red;
+        // background: red;
         grid-column: 4 / span 1;
         grid-row: 1 / span 7;
+        .line {
+            width: 4px;
+            // height: 100%;
+            height: calc(100% + 19px);
+            background: $main-red;
+            margin: 0 auto;
+        }
     }
 
     .box2 {
@@ -47,6 +70,10 @@
         grid-row: 1 / span 1;
         padding-left: 10px;
         line-height: 20px;
+        margin-top: -14px;
+        p {
+            font-size: 12px;
+        }
     }
 
     .box3 {
@@ -55,73 +82,157 @@
 
         .box-bg {
             background: $main-red;
-            height: 87%;
-            margin: 20px;
+            height: 89%;
+            margin-top: 20px;
         }
     }
     .box3-b {
         grid-column: 5 / span 2;
         grid-row: 5 / span 3;
-        margin-top: -11px;
+        margin-top: -40px;
         p {
             font-family: "Rockwell";
             font-size: 30px;
-            padding-left: 40px;
-            line-height: 30px;
+            padding-left: 20px;
+            line-height: 35px;
         }
     }
 
 
     .boxline2 {
-        background: red;
-        grid-column: 4 / span 2;
+        grid-column: 4 / span 3;
         grid-row: 8 / span 1;
+        .line {
+            width: calc(100% - 34px);
+            height: 4px;
+            background: $main-red;
+            margin: 0 auto;
+            margin-left: 34px;
+            margin-top: 15px;
+        }
+
     }
 
     .box4 {
-        background: orange;
-        grid-column: 4 / span 3;
+        // background: orange;
+        grid-column: 2 / span 5;
         grid-row: 8 / span 2;
+        display: table;
+        height: 100%;
+        margin: 0 30px 0 30px;
+        margin-top: 8px;
+        p {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 18px;
+            transform: scale(1, 0.75);
+
+        }
     }
 
     .boxline3 {
-        background: red;
+        // background: red;
         grid-column: 6 / span 1;
         grid-row: 8 / span 2;
+
+        .line{
+            width: 4px;
+            height: calc(100% - 15px);
+            background: $main-red;
+            float: right;
+            margin-top: 15px;
+        }
     }
 
     .boxline4 {
-        background: red;
+        // background: red;
         grid-column: 4 / span 3;
         grid-row: 9 / span 1;
+        position: relative;
+
+        .line {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: calc(100% - 34px);
+            height: 4px;
+            background: $main-red;
+            margin: 0 auto;
+        }
     }
 
     .box5 {
-        background: blue;
-        grid-column: 1 / span 3;
-        grid-row: 10 / span 3;
+        background: $main-blue;
+        grid-column: 3 / span 1;
+        grid-row: 10 / span 2;
+        margin-right: 30px;
+    }
+
+    .box5-b {
+        grid-column: 2 / span 2;
+        grid-row: 11 / span 3;
+        margin: 0 auto;
+        margin-top: 50px;
+        .bigBold {
+            font-family: "Rockwell";
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        .square {
+            background: $main-red;
+            width: 10px;
+            height: 10px;
+        }
+
+        .middleBold {
+            font-size: 20px;
+        }
     }
 
     .boxline5 {
-        background: red;
         grid-column: 4 / span 1;
-        grid-row: 10 / span 5;
+        grid-row: 10 / span 10;
+        .line{
+            width: 4px;
+            height: 100%;
+            background: $main-red;
+            margin: 0 auto;
+        }
     }
 
     .box6 {
-        background: lightskyblue;
         grid-column: 5 / span 2;
         grid-row: 10 / span 2;
+
+        p {
+            font-size: 20px;
+        }
     }
 
     .box7 {
-        background: pink;
-        grid-column: 5 / span 2;
-        grid-row: 12 / span 2;
+        grid-column: 5 / span 3;
+        grid-row: 13 / span 2;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .inner-box1 {
+            background: $main-red;
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 1;
+        }
+        .inner-box2 {
+            background: $main-blue;
+            grid-column: 1 / span 3;
+            grid-row: 2 / span 2;
+        }
+
     }
 
     .box8 {
-        background: pink;
+        // background: pink;
         grid-column: 5 / span 2;
         grid-row: 12 / span 2;
     }

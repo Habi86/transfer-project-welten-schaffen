@@ -1,12 +1,15 @@
 @import "Variables";
 @import "Fonts";
 @import "Content";
+@import "ArrowBounce";
+@import "Awards";
 
 p {
     font-family: "Montserrat"; // TODO: download somewhere ?_?
-    font-size: 12px;
+    font-size: 15px;
     margin: 0;
     color: $black;
+    transform: scale(1, 0.75);
 }
 
 .header {
@@ -87,8 +90,8 @@ p {
         grid-row: 1;
         img {
             float: right;
-            height: 50px;
-            margin: 20px
+            height: 90px;
+            margin: 1%;
         }
     }
     .inner-box2 {

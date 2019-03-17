@@ -1,0 +1,26 @@
+@import "compass/css3";
+
+@include keyframes(bounce) {
+	0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+	40% {
+    @include transform(translateY(-30px));
+  }
+	60% {
+    @include transform(translateY(-15px));
+  }
+}
+
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background: url('../Icons/arrow.png') no-repeat center;
+  background-size: contain;
+}
+
+.bounce {
+  @include animation(bounce 2s infinite);
+}
