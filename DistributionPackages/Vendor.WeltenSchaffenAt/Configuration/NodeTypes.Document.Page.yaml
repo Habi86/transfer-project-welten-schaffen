@@ -10,11 +10,33 @@
   properties:
     box-1-txt:
       type: string
-      defaultValue: 'Replace by your subheadline value ...'
       ui:
         label: 'box-1-txt'
         inlineEditable: TRUE
         reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+        # inspector:
+        #   group: 'document'
+        #   editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
+        #   editorOptions:
+        #     rows: 7
+        #     formatting:
+        #       bold: TRUE
+    box-3-txt:
+      type: string
+      ui:
+        label: 'box-3-txt'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+
+
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'

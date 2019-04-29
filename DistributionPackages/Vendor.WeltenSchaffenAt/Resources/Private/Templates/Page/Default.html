@@ -6,7 +6,7 @@
 	<f:section name="stylesheets">
 		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
 		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Main.css', package: 'Vendor.WeltenSchaffenAt')}" media="all" />
-		<link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'Neos.Twitter.Bootstrap')}" media="all" />
+		<!-- <link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'Neos.Twitter.Bootstrap')}" media="all" /> -->
 
 	</f:section>
 
@@ -16,7 +16,6 @@
 </head>
 <body>
 <f:section name="body">
-
 	<div class="header">
 		<div class="wrapper">
 				<div class="box boxSocial">
@@ -64,8 +63,8 @@
 					und dem kreativen Know-How der
 					Filmstudierenden. -->
 					<neos:contentElement.wrap>
-								<neos:contentElement.editable property="box-1-txt"/>
-						</neos:contentElement.wrap>
+						<neos:contentElement.editable property="box-1-txt"/>
+					</neos:contentElement.wrap>
 
 					<!-- {neos:contentElement.editable(property: 'box-1-txt')} -->
 
@@ -92,16 +91,17 @@
 				<div class="box-bg"></div>
 			</div>
 			<div class="box box3-b">
-				<p>
-					... Salzburg<br />
+					<!-- ... Salzburg<br />
 					ohne<br />
 					Kultur<br />
 					ist<br />
 					wie<br />
 					Mozart<br />
 					ohne<br />
-					Instrument.
-				</p>
+					Instrument. -->
+					<neos:contentElement.wrap>
+						<neos:contentElement.editable property="box-3-txt"/>
+					</neos:contentElement.wrap>
 			</div>
 
 			<div class="box boxline2">
@@ -196,9 +196,15 @@
 						<div>Content</div>
 					  </div>
 		</div> -->
+<!--
+		<div class="yearly-donation" id="yearly-donation">
+				<div class="count-wrap" id="counter-wrap">$<span class="counter" data-from="0" data-to="500" data-speed="100" data-refresh-interval="1">0</span></div>
+				the average yearly donation in 2015.
+		</div>
+	-->
 
 
-		<div class="contact-us">
+	<div class="contact-us">
 				<img src="../../Public/Images/WS_Logo_variante_schwarz_TEMP.png" />
 			<p>Kontaktieren Sie uns:
 			</p>
@@ -242,7 +248,7 @@
 
 
 		<!-- {content.main -> f:format.raw()} -->
-		{content.carouselItems -> f:format.raw()}
+		<!-- {content.carouselItems -> f:format.raw()} -->
 
 	<!-- <f:comment>
 		If you enabled the "sidebar" content area in your NodeType configuration and Fusion, you can uncomment this
@@ -268,6 +274,8 @@
 	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 	<!-- <script src="{f:uri.resource(path: '3/js/bootstrap.min.js', package: 'Neos.Twitter.Bootstrap')}"></script> -->
+
+	<script src="../../Public/JavaScript/scrollmagic.js"></script>
 
 	<script>
 	// var scene = new ScrollMagic.Scene({})

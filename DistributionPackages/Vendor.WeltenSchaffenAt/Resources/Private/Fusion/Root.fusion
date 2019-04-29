@@ -23,6 +23,7 @@ prototype(Vendor.WeltenSchaffenAt:DefaultPage) < prototype(Neos.Neos:Page) {
             menu = Neos.Neos:Menu
         }
         box-1-txt = ${q(node).property('box-1-txt')}
+        box-3-txt = ${q(node).property('box-3-txt')}
 
         javascripts.site = Neos.Fusion:Template {
             templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Default.html'
