@@ -12,6 +12,35 @@
 
 	<f:section name="headScripts">
 		<!-- Put your scripts inclusions for the head here, they will be included in your website by Fusion -->
+		<script>
+				function includeHTML() {
+					var z, i, elmnt, file, xhttp;
+					/*loop through a collection of all HTML elements:*/
+					z = document.getElementsByTagName("*");
+					for (i = 0; i < z.length; i++) {
+						elmnt = z[i];
+						/*search for elements with a certain atrribute:*/
+						file = elmnt.getAttribute("w3-include-html");
+						if (file) {
+							/*make an HTTP request using the attribute value as the file name:*/
+							xhttp = new XMLHttpRequest();
+							xhttp.onreadystatechange = function() {
+								if (this.readyState == 4) {
+									if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+									if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+									/*remove the attribute, and call this function once more:*/
+									elmnt.removeAttribute("w3-include-html");
+									includeHTML();
+								}
+							}
+							xhttp.open("GET", file, true);
+							xhttp.send();
+							/*exit the function:*/
+							return;
+						}
+					}
+				};
+				</script>
 	</f:section>
 </head>
 <body>
@@ -187,34 +216,90 @@
 		</div>
 
 
-		<!-- AWARDS -->
-		<!-- <div class="awards">
-
-				<div class="grid">
-						<div>Content</div>
-						<div class="full">Full width</div>
-						<div>Content</div>
-					  </div>
-		</div> -->
-<!--
-		<div class="yearly-donation" id="yearly-donation">
-				<div class="count-wrap" id="counter-wrap">$<span class="counter" data-from="0" data-to="500" data-speed="100" data-refresh-interval="1">0</span></div>
-				the average yearly donation in 2015.
+<!-- AWARDS -->
+<div class="awards">
+	<div class="bg-bar"></div>
+				<div class="carousel">
+					<p class="title">Ausgewählte Arbeiten und Auszeichnungen:</p>
+					<hr />
+					<ul class="slides">
+							<input type="radio" name="radio-buttons" id="img-1" checked />
+							<li class="slide-container">
+									<div class="slide-image">
+											<p class="item-title"><span>«</span>IRY<span>»</span></p>
+											<p>Urban Filmfestival 2018 : Best International Short</p>
+											<p>Cine Fest L.A. 2018 : Semi Finalist</p>
+											<p>Hollywood Inter. Movie Pictiure Film Festival 2018 : Official Selection Da Vinci </p>
+											<p>Filmfestival 2018 : Finalist</p>
+											<p>Virgine Spring Cinefest 2108 : Gold Award</p>
+											<p>40. Biberacher Filmfestspiele 2108 : Official Selection</p>
+									</div>
+									<div class="carousel-controls">
+											<label for="img-3" class="prev-slide">
+													<span>&lsaquo;</span>
+											</label>
+											<label for="img-2" class="next-slide">
+												<span>&rsaquo;</span>
+											</label>
+									</div>
+							</li>
+							<input type="radio" name="radio-buttons" id="img-2" />
+							<li class="slide-container">
+									<div class="slide-image">
+											<p class="item-title"><span>«</span>TITLE 2<span>»</span></p>
+											<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+									</div>
+									<div class="carousel-controls">
+											<label for="img-1" class="prev-slide">
+													<span>&lsaquo;</span>
+											</label>
+											<label for="img-3" class="next-slide">
+													<span>&rsaquo;</span>
+											</label>
+									</div>
+							</li>
+							<input type="radio" name="radio-buttons" id="img-3" />
+							<li class="slide-container">
+									<div class="slide-image">
+											<p class="item-title"><span>«</span>TITLE 3<span>»</span></p>
+											<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+									</div>
+									<div class="carousel-controls">
+											<label for="img-2" class="prev-slide">
+													<span>&lsaquo;</span>
+											</label>
+											<label for="img-1" class="next-slide">
+													<span>&rsaquo;</span>
+											</label>
+									</div>
+							</li>
+							<div class="carousel-dots">
+									<label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+									<label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+									<label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+							</div>
+					</ul>
 		</div>
-	-->
+
+
+</div>
+
+
+
 
 
 	<div class="contact-us">
-				<img src="../../Public/Images/WS_Logo_variante_schwarz_TEMP.png" />
+		<div class="content">
+			<img src="../../Public/Logo/WS_Logo_variante_orange.png" />
 			<p>Kontaktieren Sie uns:
 			</p>
-			<p>info@welten-schaffen.at
-				</p>
-			<div class="boxSocial">
-					<img src="../../Public/Icons/logo-facebook.svg" />
-					<img class="middle" src="../../Public/Icons/logo-vimeo.png" />
-					<img src="../../Public/Icons/logo-instagram.svg" />
-			</div>
+			<p>info@welten-schaffen.at</p>
+		</div>
+		<div class="boxSocial">
+				<img src="../../Public/Icons/facebook_white.png" />
+				<img class="middle" src="../../Public/Icons/vimeo_white.png" />
+				<img src="../../Public/Icons/instagram_white.png" />
+		</div>
 		</div>
 
 		<div class="sponsors">
@@ -272,10 +357,10 @@
 </f:section>
 <f:section name="bodyScripts">
 	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script> -->
 	<!-- <script src="{f:uri.resource(path: '3/js/bootstrap.min.js', package: 'Neos.Twitter.Bootstrap')}"></script> -->
 
-	<script src="../../Public/JavaScript/scrollmagic.js"></script>
+	<!-- <script src="../../Public/JavaScript/scrollmagic.js"></script> -->
 
 	<script>
 	// var scene = new ScrollMagic.Scene({})
@@ -299,6 +384,12 @@
 
 	// console.log(controller.scrollPos());
 
+
+
+
+
+
+	includeHTML();
 	</script>
 </f:section>
 </body>
