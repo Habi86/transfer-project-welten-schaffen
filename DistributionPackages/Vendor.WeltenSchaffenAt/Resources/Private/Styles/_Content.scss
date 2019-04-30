@@ -61,6 +61,22 @@
         }
     }
 
+    .box.line-lable {
+        grid-column: 4 / span 1;
+        grid-row: 1 / span 1;
+        position: relative;
+        p {
+            font-family: "Roboto Condensed Bold";
+            font-size: 16px;
+            color: $main-red;
+            transform: rotate(-90deg);
+            left: 25px;
+            bottom: 0;
+            position: absolute;
+            top: 18px;
+        }
+    }
+
     .box2 {
         grid-column: 7 / span 1;
         grid-row: 1 / span 1;
