@@ -1,0 +1,113 @@
+ %animation-default {
+  opacity: 1 !important;
+  z-index: 3;
+}
+
+@mixin carousel($items, $animation: 'default') {
+  .video-carousel-wrapper {
+  .carousel {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    > input[type="radio"] {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      top: 0;
+
+      &:checked {
+        ~ .carousel__items .carousel__item {
+          opacity: 0;
+        }
+      }
+
+      @for $i from 1 through $items {
+        &:nth-child(#{$i}) {
+          &:checked {
+            ~ .carousel__items .carousel__item {
+              @if $animation == 'default' {
+                &:nth-child(#{$i}) {
+                  opacity: 1;
+                }
+              }
+            }
+
+            ~ .carousel__nav {
+              > label {
+                &:nth-child(#{$i}) {
+                  text-decoration: underline;
+                  cursor: default;
+                  pointer-events: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__items {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      width: 100%;
+      height: 233px;
+      position: relative;
+      width: 80%;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: opacity 2s;
+      -webkit-transition: opacity 2s;
+
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+
+    &__nav {
+      position: absolute;
+      display: inline-block;
+      bottom: 10px;
+
+      > label {
+        display: block;
+        bottom: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+        font-family: "Roboto Condensed";
+        color: $grey;
+        font-size: 8px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.video-carousel-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@include carousel(5);

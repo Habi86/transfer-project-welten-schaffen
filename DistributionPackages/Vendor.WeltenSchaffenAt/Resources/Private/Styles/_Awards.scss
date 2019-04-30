@@ -43,7 +43,7 @@
 
 // PURE CSS Slider (AWARD)
 
-margin-top: 100px;
+margin: 100px -10px 0 -10px;
 position: relative;
 p {
   color: $txtwhitish;
@@ -112,7 +112,7 @@ ul.slides input {
     width: 200px;
     height: 50px;
     overflow: hidden;
-    margin-left: -52px;
+    margin-left: -57px;
 
     div {
       display: inline-block;
