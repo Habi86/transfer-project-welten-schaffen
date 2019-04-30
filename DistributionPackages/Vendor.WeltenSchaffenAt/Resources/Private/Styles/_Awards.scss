@@ -104,6 +104,54 @@ ul.slides input {
 
 .slide-container {
   display: block;
+
+  .trailer {
+    background: $white;
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    margin-left: -52px;
+
+    div {
+      display: inline-block;
+    }
+
+    p {
+      font-family: "Roboto Condensed";
+      color: $main-red;
+      font-size: 10px;
+      text-transform: uppercase;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 50px;
+    }
+    .txt {
+      background: $white;
+      width: 70%;
+      height: 100%;
+      float: left;
+    }
+    .button {
+      background: $main-blue;
+      width: 30%;
+      height: 100%;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 50px;
+
+      img {
+        min-width: inherit;
+        width: 30px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50px;
+      }
+    }
+
+  }
 }
 
 .slide-image {
