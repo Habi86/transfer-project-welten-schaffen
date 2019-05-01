@@ -22,6 +22,7 @@ prototype(Vendor.WeltenSchaffenAt:DefaultPage) < prototype(Neos.Neos:Page) {
         parts {
             menu = Neos.Neos:Menu
         }
+
         box-1-txt = ${q(node).property('box-1-txt')}
         box-3-txt = ${q(node).property('box-3-txt')}
 
@@ -33,5 +34,38 @@ prototype(Vendor.WeltenSchaffenAt:DefaultPage) < prototype(Neos.Neos:Page) {
     }
 }
 
+prototype(Vendor.WeltenSchaffenAt:Mini) < prototype(Neos.Neos:Page) {
+
+    head {
+        stylesheets.site = Neos.Fusion:Template {
+            templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Mini.html'
+            sectionName = 'stylesheets'
+        }
+
+        javascripts.site = Neos.Fusion:Template {
+            templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Mini.html'
+            sectionName = 'headScripts'
+        }
+    }
+
+    body {
+        templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Mini.html'
+        sectionName = 'body'
+        parts {
+            menu = Neos.Neos:Menu
+        }
+
+        header = ${q(node).property('header')}
+        contentheader = ${q(node).property('contentheader')}
+        content = ${q(node).property('content')}
+        extrainfo = ${q(node).property('extrainfo')}
+
+        javascripts.site = Neos.Fusion:Template {
+            templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Mini.html'
+            sectionName = 'bodyScripts'
+        }
+
+    }
+}
 include: NodeTypes/**/*
 include: NodeTypes/*.fusion

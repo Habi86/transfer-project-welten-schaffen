@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<html>
+<head>
+	<f:section name="stylesheets">
+		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
+		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Main.css', package: 'Vendor.WeltenSchaffenAt')}" media="all" />
+
+	</f:section>
+
+	<f:section name="headScripts">
+		<!-- Put your scripts inclusions for the head here, they will be included in your website by Fusion -->
+	</f:section>
+</head>
+<body>
+<f:section name="body">
+	<div class="header">
+		<div class="wrapper bg">
+			<div class="box blue"></div>
+		</div>
+		<div class="wrapper mini">
+				<div class="box boxSocial">
+					<img src="../../Public/Icons/logo-facebook.svg" />
+					<img src="../../Public/Icons/logo-instagram.svg" />
+					<img src="../../Public/Icons/logo-vimeo.png" />
+				</div>
+				<div class="box box1">
+					<nav class="menu">
+						{parts.menu -> f:format.raw()}
+					</nav>
+				</div>
+				<div class="inner-grid">
+					<div class="inner-box1"><img src="../../Public/Images/WS_Logo.png" /></div>
+					<div class="inner-box2"></div>
+				</div>
+				<div class ="title">
+					<!-- <p>Kontakt</p> -->
+					<neos:contentElement.wrap>
+						<neos:contentElement.editable property="header" tag="p"/>
+					</neos:contentElement.wrap>
+				</div>
+				<div class="box content">
+					<!-- <h1>Du findest uns unter:</h1> -->
+					<neos:contentElement.wrap>
+						<neos:contentElement.editable property="contentheader" tag="h1"/>
+					</neos:contentElement.wrap>
+					<br />
+					<!-- <p>VIMEO:</p>
+					<p><a href="https://vimeo.com/multimediaart" target=_blank>https://vimeo.com/multimediaart</a></p>
+					<br />
+					<p>FACEBOOK: </p>
+					<p><a href="https://www.facebook.com/multimediaart/videos/10152398848649831/" target=_blank>https://www.facebook.com/multimediaart/videos/10152398848649831/</a></p>
+					<br />
+					<p>INSTAGRAM: </p>
+					<p><a href="https://www.instagram.com/busymakingmovies/" target=_blank>https://www.instagram.com/busymakingmovies/</a></p> -->
+					<neos:contentElement.wrap>
+						<neos:contentElement.editable property="content" tag="p"/>
+					</neos:contentElement.wrap>
+
+				</div>
+
+				<div class="adress">
+					<!-- <p>
+							Sergei Eisenstein Gesellschaft e.V.<br />
+							c/o Till Fuhrmeister<br />
+							Tschusistrasse 5c<br />
+							A – 5400 Hallein<br />
+					</p> -->
+					<neos:contentElement.wrap>
+							<neos:contentElement.editable property="extrainfo" tag="p"/>
+						</neos:contentElement.wrap>
+				</div>
+			</div>
+	</div>
+
+
+
+
+<div class="footer">
+		<p class=heading>WELTEN SCHAFFEN</p>
+		<p class=sub>Eine Initiative zur Filmförderung der FH Salzburg</p>
+		<a href="#">Impressum</a> | <a href="#">Datenschutz</a>
+</div>
+
+
+</f:section>
+<f:section name="bodyScripts">
+	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
+
+</f:section>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.wrapper {
+  &.mini {
+
+    .title {
+      grid-column: 5 / span 2;
+      grid-row: 2 / 3;
+      position: relative;
+
+      p {
+        font-family: "Montserrat";
+        font-size: 35px;
+        text-transform: uppercase;
+        color: $main-red;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-weight: 100;
+        margin-bottom: -8px;
+      }
+    }
+
+    .adress {
+      grid-column: 7 / span 3;
+      grid-row: 4 / span 2;
+      padding-left: 10px;
+
+      p {
+        font-family: "Montserrat";
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $main-red;
+        font-weight: 100;
+
+        white-space: nowrap;
+      }
+    }
+
+    .content {
+      grid-column: 3 / span 4;
+      grid-row: 3 / 6;
+      background:$main-red;
+
+      text-align: center;
+      color: $white;
+      padding: 20px 10px 20px 10px;
+
+      h1 {
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 20px;
+      }
+
+      p {
+        font-family: "Montserrat";
+        font-size: 14px;
+        color: $white;
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    }
+  }
+}
