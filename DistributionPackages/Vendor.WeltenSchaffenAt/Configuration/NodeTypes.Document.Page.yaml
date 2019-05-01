@@ -123,6 +123,13 @@
               strong: TRUE
               em: TRUE
 
+'Vendor.WeltenSchaffenAt:TermsOfUse':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    icon: 'icon-gavel'
+    label: 'WeltenSchaffenAt Terms of use'
+
 # If you need more than just the "main" content area you can uncomment the snippet below. It will add a "sidebar" area
 # to your pages. You can add as many areas as you like, still only those that are rendered in your Fusion code and
 # template are visible on your page.

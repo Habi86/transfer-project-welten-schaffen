@@ -5,6 +5,7 @@
 @import "Awards";
 @import "Video_Carousel";
 @import "Mini";
+@import "_Terms_of_use.scss";
 
 p,a {
     font-family: "Montserrat"; // TODO: download somewhere ?_?
@@ -307,7 +308,6 @@ body {
         width: 70px;
     }
 }
-
 
 // FOOTER
 .footer {

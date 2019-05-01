@@ -67,5 +67,33 @@ prototype(Vendor.WeltenSchaffenAt:Mini) < prototype(Neos.Neos:Page) {
 
     }
 }
+
+prototype(Vendor.WeltenSchaffenAt:TermsOfUse) < prototype(Neos.Neos:Page) {
+
+    head {
+        stylesheets.site = Neos.Fusion:Template {
+            templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Terms_of_Use.html'
+            sectionName = 'stylesheets'
+        }
+
+        javascripts.site = Neos.Fusion:Template {
+            templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Terms_of_Use.html'
+            sectionName = 'headScripts'
+        }
+    }
+
+    body {
+        templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Terms_of_Use.html'
+        sectionName = 'body'
+        parts {
+            menu = Neos.Neos:Menu
+        }
+        javascripts.site = Neos.Fusion:Template {
+            templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Terms_of_Use.html'
+            sectionName = 'bodyScripts'
+        }
+
+    }
+}
 include: NodeTypes/**/*
 include: NodeTypes/*.fusion
