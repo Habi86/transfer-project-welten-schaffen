@@ -2,10 +2,12 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace fusion=Neos\Fusion\ViewHelpers}
 <html>
+
 <head>
 	<f:section name="stylesheets">
 		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
-		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Main.css', package: 'Vendor.WeltenSchaffenAt')}" media="all" />
+		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Main.css', package: 'Vendor.WeltenSchaffenAt')}"
+			media="all" />
 		<!-- <link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'Neos.Twitter.Bootstrap')}" media="all" /> -->
 
 	</f:section>
@@ -15,13 +17,14 @@
 
 	</f:section>
 </head>
+
 <body>
-<f:section name="body">
-	<div class="header">
-		<div class="wrapper bg">
-			<div class="box blue"></div>
-		</div>
-		<div class="wrapper">
+	<f:section name="body">
+		<div class="header">
+			<div class="wrapper bg">
+				<div class="box blue"></div>
+			</div>
+			<div class="wrapper">
 				<div class="box boxSocial">
 					<img src="../../Public/Icons/logo-facebook.svg" />
 					<img src="../../Public/Icons/logo-instagram.svg" />
@@ -37,27 +40,36 @@
 					<div class="inner-box2"></div>
 				</div>
 				<div class="box box2">
-					<div class="inner-box1"><p>Salzburg ist großes Kino</p></div>
+					<div class="inner-box1">
+						<p>Salzburg ist großes Kino</p>
+					</div>
 					<div class="inner-box2">
 						<hr />
-							<p>und Filme unsere Leidenschaft.</p>
+						<p>und Filme unsere Leidenschaft.</p>
 					</div>
 				</div>
-				<div class="box box3">
-					<div class="inner-box1"><p>Zu den Videos</p></div>
-					<div class="inner-box2"><div><img src="../../Public/Icons/play.svg" /></div></div>
+				<div style="cursor: pointer" onclick="window.location='#go2Trailer'" class="box box3">
+					<div class="inner-box1">
+						<p>Zu den Videos</p>
+					</div>
+					<div class="inner-box2">
+						<div><img src="../../Public/Icons/play.svg" /></div>
+					</div>
 				</div>
 			</div>
-	</div>
+		</div>
 
 
-	<div class="content">
 
-		<div class="wrapper">
-			<div class="box box1">
-				<p class="bigletter">W</p>
-				<p class="text">
-					<!-- Wir, das Future Cinema Filmdepartment des
+
+
+		<div class="content">
+
+			<div class="wrapper">
+				<div class="box box1">
+					<p class="bigletter">W</p>
+					<p class="text">
+						<!-- Wir, das Future Cinema Filmdepartment des
 					Studiengangs MultiMediaArt, produzieren das Kino der Zukunft. Ideen, Know-How und Leidenschaft legen den Grundstein für die Gestaltung der
 					Salzburger Filmlandschaft. Es fehlt nur eines: <br />
 					<strong>Ihre Unterstützung.</strong><br /><br />
@@ -66,41 +78,41 @@
 					Kooperation zwischen regionalen Unternehmen
 					und dem kreativen Know-How der
 					Filmstudierenden. -->
-					<neos:contentElement.wrap>
-						<neos:contentElement.editable property="box-1-txt"/>
-					</neos:contentElement.wrap>
+						<neos:contentElement.wrap>
+							<neos:contentElement.editable property="box-1-txt" />
+						</neos:contentElement.wrap>
 
-					<!-- {neos:contentElement.editable(property: 'box-1-txt')} -->
+						<!-- {neos:contentElement.editable(property: 'box-1-txt')} -->
 
 
-				</p>
-				<p class="middleBold">Denn...</p>
+					</p>
+					<p class="middleBold">Denn...</p>
 
-			</div>
+				</div>
 
-			<div class="box line-lable">
-				<p>Kultur</p>
-			</div>
+				<div class="box line-lable">
+					<p>Kultur</p>
+				</div>
 
-			<div class="box boxline">
-				<div class="line"></div>
-			</div>
-			<div class="box arrowbox">
-				<div class="arrow bounce"></div>
-			</div>
+				<div class="box boxline">
+					<div class="line"></div>
+				</div>
+				<div class="box arrowbox">
+					<div class="arrow bounce"></div>
+				</div>
 
-			<div class="box box2">
-				<p>
-					Eine Initiative zur
-					Filmförderung der
-					Fachhochschule
-					Salzburg.
-				</p>
-			</div>
-			<div class="box box3">
-				<div class="box-bg"></div>
-			</div>
-			<div class="box box3-b">
+				<div class="box box2">
+					<p>
+						Eine Initiative zur
+						Filmförderung der
+						Fachhochschule
+						Salzburg.
+					</p>
+				</div>
+				<div class="box box3">
+					<div class="box-bg"></div>
+				</div>
+				<div class="box box3-b">
 					<!-- ... Salzburg<br />
 					ohne<br />
 					Kultur<br />
@@ -110,253 +122,343 @@
 					ohne<br />
 					Instrument. -->
 					<neos:contentElement.wrap>
-						<neos:contentElement.editable property="box-3-txt"/>
+						<neos:contentElement.editable property="box-3-txt" />
 					</neos:contentElement.wrap>
-			</div>
+				</div>
 
-			<div class="box boxline2">
-				<div class="line"></div>
-			</div>
-			<div class="box boxline3">
-				<div class="line"></div>
-			</div>
+				<div class="box boxline2">
+					<div class="line"></div>
+				</div>
+				<div class="box boxline3">
+					<div class="line"></div>
+				</div>
 
-			<div class="box boxline4">
-				<div class="line"></div>
-			</div>
-			<div class="box box4">
-				<p>
-					Werden Sie mit Ihrem Unternehmen zu einem Partner, der die Kulturlandschaft Salzburg nicht nur fördert, sondern auch prägt.
-				</p>
-			</div>
-			<div class="box box5">
-				<div class="box-bg"></div>
-			</div>
+				<div class="box boxline4">
+					<div class="line"></div>
+				</div>
+				<div class="box box4">
+					<p>
+						Werden Sie mit Ihrem Unternehmen zu einem Partner, der die Kulturlandschaft Salzburg nicht nur fördert,
+						sondern auch prägt.
+					</p>
+				</div>
+				<div class="box box5">
+					<div class="box-bg"></div>
+				</div>
 
-			<div class="box box5-b">
-				<p class="bigBold">Filme sind Magie.</p>
-				<div class="square"></div>
-				<p class="middleBold">
-					Sie lassen uns träumen, <br />
-					trauern, mitfiebern und <br />
-					katapultieren uns in neue Sphären.
-				</p>
-			</div>
+				<div class="box box5-b">
+					<a id="go2Trailer">
+						<p class="bigBold">Filme sind Magie.</p>
+					</a>
+					<div class="square"></div>
+					<p class="middleBold">
+						Sie lassen uns träumen, <br />
+						trauern, mitfiebern und <br />
+						katapultieren uns in neue Sphären.
+					</p>
+				</div>
 
-			<div class="box boxline5">
-				<div class="line"></div>
-			</div>
-			<div class="box box6">
-				<p>
+				<div class="box boxline5">
+					<div class="line"></div>
+				</div>
+				<div class="box box6">
+					<p>
 						Wer denkt sich nicht<br />
 						gern in andere Welten? <br />
 						Lassen Sie uns diese <br />
 						Welten schaffen. <br /><br />
 
 						<strong>Gemeinsam.</strong>
-				</p>
-			</div>
-
-			<div class="box logo">
-				<div class="wrapper">
-					<img src="../../Public/Logo/WS_Logo_Icon_orange-notxt.png" />
+					</p>
 				</div>
 
-			</div>
+				<div class="box logo">
+					<div class="wrapper">
+						<img src="../../Public/Logo/WS_Logo_Icon_orange-notxt.png" />
+					</div>
 
-<!-- Video Carousel -->
-			<div class="box box7">
-				<div class="inner-box1"></div>
-				<div class="inner-box2"></div>
+				</div>
 
-				<!-- VIDEO CAROUSEL -->
-				<div class="video-carousel-wrapper">
+				<!-- Video Carousel -->
+				<div class="box box7">
+					<div class="inner-box1"></div>
+					<div class="inner-box2"></div>
+
+					<!-- VIDEO CAROUSEL -->
+					<div class="video-carousel-wrapper">
 						<div class="container">
-								<div class="carousel">
-									<input type="radio" id="carousel-1" name="carousel[]" checked>
-									<input type="radio" id="carousel-2" name="carousel[]">
-									<input type="radio" id="carousel-3" name="carousel[]">
-									<ul class="carousel__items">
-										<li class="carousel__item">
-											<!-- <img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""> -->
-											<video controls>
-													<source src="../../Public/Videos/sample.mp4" type="video/mp4">
-													Your browser does not support HTML5 video.
-												</video>
-										</li>
-									</ul>
+							<div class="carousel">
+								<input type="radio" id="carousel-1" name="carousel[]" checked>
+								<input type="radio" id="carousel-2" name="carousel[]">
+								<input type="radio" id="carousel-3" name="carousel[]">
+								<ul class="carousel__items">
+									<li class="carousel__item">
+										<!-- <img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""> -->
+										<video controls>
+											<source src="../../Public/Videos/sample.mp4" type="video/mp4">
+											Your browser does not support HTML5 video.
+										</video>
+									</li>
+								</ul>
 
-									<div class="carousel__nav">
-										<label for="carousel-1">01</label>
-										<label for="carousel-2">02</label>
-										<label for="carousel-3">03</label>
-									</div>
+								<div class="carousel__nav">
+									<label for="carousel-1">01</label>
+									<label for="carousel-2">02</label>
+									<label for="carousel-3">03</label>
 								</div>
 							</div>
+						</div>
+					</div>
 				</div>
-			</div>
 
-			<div class="box box8"></div>
+				<div class="box box8"></div>
 
-			<div class="box boxline6">
-				<div class="line"></div>
-			</div>
-			<div class="box boxline7">
-				<div class="line"></div>
-			</div>
-			<div class="box boxline8">
-				<div class="line"></div>
-			</div>
+				<div class="box boxline6">
+					<div class="line"></div>
+				</div>
+				<div class="box boxline7">
+					<div class="line"></div>
+				</div>
+				<div class="box boxline8">
+					<div class="line"></div>
+				</div>
 
-			<div class="box boxline9">
-				<div class="line"></div>
-			</div>
+				<div class="box boxline9">
+					<div class="line"></div>
+				</div>
 
-			<div class="box box9">
-				<p class="bigletter">S</p>
-			</div>
-			<div class="box box9-text">
-				<p>Sie wollen mit uns gemeinsam <br />
-					Welten schaffen?</p>
-			</div>
-			<div class="box box10">
+				<div class="box box9">
+					<p class="bigletter">S</p>
+				</div>
+				<div class="box box9-text">
+					<p>Sie wollen mit uns gemeinsam <br />
+						Welten schaffen?</p>
+				</div>
+				<div class="box box10">
 					<p>Mach mit!</p>
+				</div>
+
 			</div>
 
-		</div>
 
-
-		<div class="paypal">
-					<img src="../../Public/Icons/paying.png" />
-		</div>
+			<div class="paypal">
+				<img src="../../Public/Icons/paying.png" />
+			</div>
 
 
 
 
 
-<!-- AWARDS -->
-<div class="awards">
-	<div class="bg-bar"></div>
+			<!-- AWARDS -->
+			<div class="awards">
+				<div class="bg-bar"></div>
 				<div class="carousel">
 					<p class="title">Ausgewählte Arbeiten und Auszeichnungen:</p>
 					<hr />
 					<ul class="slides">
-							<input type="radio" name="radio-buttons" id="img-1" checked />
-							<li class="slide-container">
-									<div class="slide-image">
-											<p class="item-title"><span>«</span>IRY<span>»</span></p>
-											<p>Urban Filmfestival 2018 : Best International Short</p>
-											<p>Cine Fest L.A. 2018 : Semi Finalist</p>
-											<p>Hollywood Inter. Movie Pictiure Film Festival 2018 : Official Selection Da Vinci </p>
-											<p>Filmfestival 2018 : Finalist</p>
-											<p>Virgine Spring Cinefest 2108 : Gold Award</p>
-											<p>40. Biberacher Filmfestspiele 2108 : Official Selection</p>
+						<input type="radio" name="radio-buttons" id="img-1" checked />
+						<li class="slide-container">
+							<div  class="slide-image">
+								<p class="item-title"><span>«</span>IRY<span>»</span></p>
+								<p>Urban Filmfestival 2018 : Best International Short</p>
+								<p>Cine Fest L.A. 2018 : Semi Finalist</p>
+								<p>Hollywood Inter. Movie Pictiure Film Festival 2018 : Official Selection Da Vinci </p>
+								<p>Filmfestival 2018 : Finalist</p>
+								<p>Virgine Spring Cinefest 2108 : Gold Award</p>
+								<p>40. Biberacher Filmfestspiele 2108 : Official Selection</p>
+								<a href="about:blank" target=_blank><p>wtf wasn los</p></a>
 
-											<div class="trailer">
-												<div class="txt"><p>Trailer ansehen</p></div>
-												<div class="button"><img src="../../Public/Icons/play.svg" /></div>
-											</div>
+								<div
+									class="trailer">
+									<div class="txt">
+										<p>Trailer ansehenfoo</p>
 									</div>
-									<div class="carousel-controls">
-											<label for="img-3" class="prev-slide">
-													<span>&lsaquo;</span>
-											</label>
-											<label for="img-2" class="next-slide">
-												<span>&rsaquo;</span>
-											</label>
-									</div>
-							</li>
-							<input type="radio" name="radio-buttons" id="img-2" />
-							<li class="slide-container">
-									<div class="slide-image">
-											<p class="item-title"><span>«</span>TITLE 2<span>»</span></p>
-											<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-									</div>
-									<div class="carousel-controls">
-											<label for="img-1" class="prev-slide">
-													<span>&lsaquo;</span>
-											</label>
-											<label for="img-3" class="next-slide">
-													<span>&rsaquo;</span>
-											</label>
-									</div>
-							</li>
-							<input type="radio" name="radio-buttons" id="img-3" />
-							<li class="slide-container">
-									<div class="slide-image">
-											<p class="item-title"><span>«</span>TITLE 3<span>»</span></p>
-											<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-									</div>
-									<div class="carousel-controls">
-											<label for="img-2" class="prev-slide">
-													<span>&lsaquo;</span>
-											</label>
-											<label for="img-1" class="next-slide">
-													<span>&rsaquo;</span>
-											</label>
-									</div>
-							</li>
-							<div class="carousel-dots">
-									<label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-									<label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-									<label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+								</div>
 							</div>
+
+							<div class="carousel-controls">
+								<label for="img-3" class="prev-slide">
+									<span>&lsaquo;</span>
+								</label>
+								<label for="img-2" class="next-slide">
+									<span>&rsaquo;</span>
+								</label>
+							</div>
+						</li>
+						<input type="radio" name="radio-buttons" id="img-2" />
+						<li class="slide-container">
+							<div class="slide-image">
+								<p class="item-title"><span>«</span>COLORS<span>»</span></p>
+								<p>
+									Internationales Film Forum Linz: Future der junge Film: Winner <br />
+									ARFF Barcelona :International Awards : 2108 Official Selection
+								</p>
+
+								<div
+									class="trailer">
+									<div class="txt">
+										<p>Trailer ansehen</p>
+									</div>
+									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+								</div>
+							</div>
+
+							<div class="carousel-controls">
+								<label for="img-1" class="prev-slide">
+									<span>&lsaquo;</span>
+								</label>
+								<label for="img-3" class="next-slide">
+									<span>&rsaquo;</span>
+								</label>
+							</div>
+						</li>
+						<input type="radio" name="radio-buttons" id="img-3" />
+						<li class="slide-container">
+							<div class="slide-image">
+								<p class="item-title"><span>«</span>TOMNIS FI<span>»</span></p>
+								<p>Best Commercial ACGA Award 2016<br />
+									Best Student Film ACGA Award<br />
+									Winner Future, der junge Film FilmForumLinz 2016<br />
+									Best Spot Foresight Festival 2016<br />
+									Winner Landespreis für Marketing und Kommunikation Salzburg 2016</p>
+
+								<div class="trailer">
+									<div class="txt">
+										<p>Trailer ansehen</p>
+									</div>
+									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+								</div>
+							</div>
+							<div class="carousel-controls">
+								<label for="img-2" class="prev-slide">
+									<span>&lsaquo;</span>
+								</label>
+								<label for="img-4" class="next-slide">
+									<span>&rsaquo;</span>
+								</label>
+							</div>
+						</li>
+						<input type="radio" name="radio-buttons" id="img-4" />
+						<li class="slide-container">
+							<div class="slide-image">
+								<p class="item-title"><span>«</span>UFERLOS<span>»</span></p>
+								<p>
+									Worldfest Houston 2018: Remi Winner<br />
+									Festival of Nations : 2108 : Official Selection<br />
+									Ouchy Film Awards 2108 : Official Selection<br />
+									ARFF Berlin : 2108 : Official Selection<br />
+									Red Dirt International Film Festival 2108 : Official Selection
+								</p>
+
+								<div class="trailer">
+									<div class="txt">
+										<p>Trailer ansehen</p>
+									</div>
+									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+								</div>
+							</div>
+							<div class="carousel-controls">
+								<label for="img-3" class="prev-slide">
+									<span>&lsaquo;</span>
+								</label>
+								<label for="img-5" class="next-slide">
+									<span>&rsaquo;</span>
+								</label>
+							</div>
+						</li>
+						<input type="radio" name="radio-buttons" id="img-5" />
+						<li class="slide-container">
+							<div class="slide-image">
+								<p class="item-title"><span>«</span>UNTER TOTEN<span>»</span></p>
+								<p>
+									Manchester Film Festival 2017 Best Student Film 2017<br />
+									Toronto Imdependent Film Awards 2017 Best Student Film 2017 Cannes Short Film Corner 2017<br />
+									Near Nazareth Film Festival 2017 Official Selection<br />
+									Festival of nations 2017 Bester Student Film<br />
+									Lift-Off Film Festival - New York 2017
+								</p>
+
+								<div class="trailer">
+									<div class="txt">
+										<p>Trailer ansehen</p>
+									</div>
+									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+								</div>
+							</div>
+							<div class="carousel-controls">
+								<label for="img-4" class="prev-slide">
+									<span>&lsaquo;</span>
+								</label>
+								<label for="img-1" class="next-slide">
+									<span>&rsaquo;</span>
+								</label>
+							</div>
+						</li>
+						<div class="carousel-dots">
+							<label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+							<label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+							<label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+							<label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+							<label for="img-5" class="carousel-dot" id="img-dot-5"></label>
+
+						</div>
 					</ul>
-		</div>
-</div>
+				</div>
+			</div>
 
 
 
 
 
-	<div class="contact-us">
-		<div class="content">
-			<img src="../../Public/Logo/WS_Logo_variante_orange.png" />
-			<p>Kontaktieren Sie uns:
-			</p>
-			<p>info@welten-schaffen.at</p>
-		</div>
-		<div class="boxSocial">
-				<img src="../../Public/Icons/facebook_white.png" />
-				<img class="middle" src="../../Public/Icons/vimeo_white.png" />
-				<img src="../../Public/Icons/instagram_white.png" />
-		</div>
-		</div>
+			<div class="contact-us">
+				<div class="content">
+					<img src="../../Public/Logo/WS_Logo_variante_orange.png" />
+					<p>Kontaktieren Sie uns:
+					</p>
+					<p>info@welten-schaffen.at</p>
+				</div>
+				<div class="boxSocial">
+					<img src="../../Public/Icons/facebook_white.png" />
+					<img class="middle" src="../../Public/Icons/vimeo_white.png" />
+					<img src="../../Public/Icons/instagram_white.png" />
+				</div>
+			</div>
 
-		<div class="sponsors">
+			<div class="sponsors">
 
-			<div>
+				<div>
 					<p>Eine Initiative von:</p>
-			</div>
-
-			<div>
-					<p>Eine freundliche Unterstützung von:</p>
-			</div>
-
-			<div>
-					<img src="../../Public/Sponsors/FH_MMA.png" />
-			</div>
-
-			<div>
-					<img src="../../Public/Sponsors/Sergei.png" />
-			</div>
-
-			<div>
 				</div>
 
 				<div>
-						<img src="../../Public/Sponsors/Haus_der_Natur.png" />
+					<p>Eine freundliche Unterstützung von:</p>
+				</div>
+
+				<div>
+					<img src="../../Public/Sponsors/FH_MMA.png" />
+				</div>
+
+				<div>
+					<img src="../../Public/Sponsors/Sergei.png" />
+				</div>
+
+				<div>
+				</div>
+
+				<div>
+					<img src="../../Public/Sponsors/Haus_der_Natur.png" />
+				</div>
+
 			</div>
 
-		</div>
 
 
 
+			<!-- {content.main -> f:format.raw()} -->
+			<!-- {content.carouselItems -> f:format.raw()} -->
 
-		<!-- {content.main -> f:format.raw()} -->
-		<!-- {content.carouselItems -> f:format.raw()} -->
-
-	<!-- <f:comment>
+			<!-- <f:comment>
 		If you enabled the "sidebar" content area in your NodeType configuration and Fusion, you can uncomment this
 		section to actually render in in your output. Remove the "f:comment" tag and this text, and adjust the markup as you
 		like.
@@ -364,26 +466,26 @@
 		{content.sidebar -> f:format.raw()}
 	</f:comment> -->
 
-	</div>
+		</div>
 
 
-<div class="footer">
-		<p class=heading>WELTEN SCHAFFEN</p>
-		<p class=sub>Eine Initiative zur Filmförderung der FH Salzburg</p>
-		<a href="/impressum.html">Impressum</a> | <a href="/datenschutz.html">Datenschutz</a>
+		<div class="footer">
+			<p class=heading>WELTEN SCHAFFEN</p>
+			<p class=sub>Eine Initiative zur Filmförderung der FH Salzburg</p>
+			<a href="/impressum.html">Impressum</a> | <a href="/datenschutz.html">Datenschutz</a>
 
-</div>
+		</div>
 
 
-</f:section>
-<f:section name="bodyScripts">
-	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
-	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script> -->
-	<!-- <script src="{f:uri.resource(path: '3/js/bootstrap.min.js', package: 'Neos.Twitter.Bootstrap')}"></script> -->
+	</f:section>
+	<f:section name="bodyScripts">
+		<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
+		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script> -->
+		<!-- <script src="{f:uri.resource(path: '3/js/bootstrap.min.js', package: 'Neos.Twitter.Bootstrap')}"></script> -->
 
-	<!-- <script src="../../Public/JavaScript/scrollmagic.js"></script> -->
+		<!-- <script src="../../Public/JavaScript/scrollmagic.js"></script> -->
 
-	<script>
+		<script>
 	// var scene = new ScrollMagic.Scene({})
 	// var start = scene.scrollOffset();
 	// var end = scene.scrollOffset() + scene.duration();
@@ -408,7 +510,8 @@
 
 
 
-	</script>
-</f:section>
+		</script>
+	</f:section>
 </body>
+
 </html>
