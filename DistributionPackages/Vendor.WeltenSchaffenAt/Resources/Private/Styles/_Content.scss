@@ -186,6 +186,8 @@
         grid-row: 11 / span 3;
         margin: 0 auto;
         margin-top: 50px;
+        z-index: 1;
+
         .bigBold {
             font-family: "Rockwell";
             font-size: 30px;
@@ -217,6 +219,7 @@
     .box6 {
         grid-column: 5 / span 2;
         grid-row: 10 / span 2;
+        z-index: 1;
 
         p {
             font-size: 20px;

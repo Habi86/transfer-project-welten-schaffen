@@ -22,9 +22,20 @@ prototype(Vendor.WeltenSchaffenAt:DefaultPage) < prototype(Neos.Neos:Page) {
         parts {
             menu = Neos.Neos:Menu
         }
-
+        box-1-initial = ${q(node).property('box-1-initial')}
         box-1-txt = ${q(node).property('box-1-txt')}
-        box-3-txt = ${q(node).property('box-3-txt')}
+        box-1-passingWord = ${q(node).property('box-1-passingWord')}
+
+        box-3-txt2 = ${q(node).property('box-3-txt2')}
+        box-4-centered-txt = ${q(node).property('box-4-centered-txt')}
+
+        box-5-title = ${q(node).property('box-5-title')}
+        box-5-txt = ${q(node).property('box-5-txt')}
+
+        box-6-txt = ${q(node).property('box-6-txt')}
+
+        box-9-initial = ${q(node).property('box-9-initial')}
+        box-9-txt = ${q(node).property('box-9-txt')}
 
         javascripts.site = Neos.Fusion:Template {
             templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/Default.html'

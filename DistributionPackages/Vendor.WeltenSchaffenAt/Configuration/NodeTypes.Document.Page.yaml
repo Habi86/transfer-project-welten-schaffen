@@ -8,6 +8,15 @@
     icon: 'icon-home'
     label: 'WeltenSchaffenAt Home'
   properties:
+    box-1-initial:
+      type: string
+      ui:
+        label: 'box-1-initial'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter initial...'
     box-1-txt:
       type: string
       ui:
@@ -16,6 +25,7 @@
         reloadIfChanged: TRUE
         inline:
           editorOptions:
+            placeholder: 'Enter text...'
             formatting:
               left: TRUE
               center: TRUE
@@ -29,14 +39,114 @@
         #     rows: 7
         #     formatting:
         #       bold: TRUE
-    box-3-txt:
+    box-1-passingWord:
       type: string
       ui:
-        label: 'box-3-txt'
+        label: 'box-1-passingWord'
         inlineEditable: TRUE
         reloadIfChanged: TRUE
-
-
+        inline:
+          editorOptions:
+            placeholder: 'Enter passing word...'
+    box-3-txt2:
+      type: string
+      ui:
+        label: 'box-3-txt2'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter text... must contain 8 lines'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+    box-4-centered-txt:
+      type: string
+      ui:
+        label: 'box-4-centered-txt'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter text...'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+    box-5-title:
+      type: string
+      ui:
+        label: 'box-5-title'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter title...'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+    box-5-txt:
+      type: string
+      ui:
+        label: 'box-5-txt'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter text...'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+    box-6-txt:
+      type: string
+      ui:
+        label: 'box-6-txt'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter text...'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+    box-9-initial:
+      type: string
+      ui:
+        label: 'box-9-initial'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter initial...'
+    box-9-txt:
+      type: string
+      ui:
+        label: 'box-9-txt'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter text...'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
