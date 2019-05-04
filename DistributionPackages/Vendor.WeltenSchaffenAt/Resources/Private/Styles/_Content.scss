@@ -27,6 +27,11 @@
         font-size: 200px;
         margin-bottom: 20px;
         transform: inherit;
+
+        &.outline {
+            -webkit-text-stroke: 2px $main-red;
+            color: white;
+        }
     }
 
     .box1 {
