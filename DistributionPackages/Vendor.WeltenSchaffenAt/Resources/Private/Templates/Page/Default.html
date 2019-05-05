@@ -26,7 +26,7 @@
 			</div>
 			<div class="wrapper">
 				<div class="box boxSocial">
-					<a href="https://www.facebook.com/multimediaart/videos/10152398848649831/" target=_blank><img
+					<a href="https://www.facebook.com/multimediaart/" target=_blank><img
 							src="../../Public/Icons/logo-facebook.svg" /></a>
 					<a href="https://www.instagram.com/busymakingmovies/" target=_blank><img
 							src="../../Public/Icons/logo-instagram.svg" /></a>
@@ -81,7 +81,7 @@
 					und dem kreativen Know-How der
 					Filmstudierenden. -->
 						<neos:contentElement.wrap>
-							<neos:contentElement.editable property="box-1-txt" tag="p" class="text"  />
+							<neos:contentElement.editable property="box-1-txt" tag="p" class="text" />
 						</neos:contentElement.wrap>
 					</p>
 					<!-- <p class="middleBold">Denn...</p> -->
@@ -267,12 +267,55 @@
 						<neos:contentElement.editable property="box-9-txt" tag="p" />
 					</neos:contentElement.wrap>
 				</div>
-				<div class="box box10">
-					<p>Mach mit!</p>
-				</div>
 			</div>
+
 			<div class="paypal">
-				<img src="../../Public/Icons/paying.png" />
+				<div class="line"></div>
+				<div class="support-us">
+					<div class="button" onclick="openPopUp()">
+						<p>Mach mit!</p>
+					</div>
+
+					<img src="../../Public/Icons/paying.png" />
+				</div>
+				<div id="paypal-popup" class="wrapper">
+					<div class="popup">
+						<div class="x-mark" onclick="closePopUp()">
+							<img src="../../Public/Icons/x-mark.svg" />
+						</div>
+						<div class="data">
+							<div class="paypal-logo">
+								<img src="../../Public/Logo/paypal-logo.svg" />
+							</div>
+							<div class="border"></div>
+							<div class="bank">
+								<p>
+									Sergei Eisenstein Gesellschaft e.V.<br />
+									Raiffeisenbank Oberalm-Puch<br />
+									IBAN: AT18 3504 5000 0011 4223<br />
+									BIC: RVSAAT2S045<br /><br />
+
+									Verwendungszweck:<br />
+									WeltenSchaffen*
+									<i class="fas fa-times"></i>
+								</p>
+							</div>
+						</div>
+						<div class="info">
+							<p>
+								<span>*</span>Teilen Sie uns gerne Ihren Namen und Ihre E-Mail Adresse mit, damit wir uns erkenntlich
+								zeigen können.<br />
+								Alle Spenden kommen zu 100% studentischen Filmprojekten zugute.
+							</p>
+						</div>
+
+						<div class="thanku">
+							<p>VIELEN DANK!</p>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 
 
@@ -294,9 +337,12 @@
 								<p>Unser Fachbereich in 92 Sekunden.</p>
 								<div class="trailer">
 									<div class="txt">
-											<a href="https://vimeo.com/317072556" target=_blank><p>Trailer ansehen</p></a>
+										<a href="https://vimeo.com/317072556" target=_blank>
+											<p>Trailer ansehen</p>
+										</a>
 									</div>
-									<div class="button"><a href="https://vimeo.com/317072556" target=_blank><img src="../../Public/Icons/play.svg" /></a></div>
+									<div class="button"><a href="https://vimeo.com/317072556" target=_blank><img
+												src="../../Public/Icons/play.svg" /></a></div>
 								</div>
 							</div>
 
@@ -462,6 +508,7 @@
 
 
 
+
 			<div class="contact-us">
 				<div class="content">
 					<img src="../../Public/Logo/WS_Logo_variante_orange.png" />
@@ -470,9 +517,12 @@
 					<p>info@welten-schaffen.at</p>
 				</div>
 				<div class="boxSocial">
-					<img src="../../Public/Icons/facebook_white.png" />
-					<img class="middle" src="../../Public/Icons/vimeo_white.png" />
-					<img src="../../Public/Icons/instagram_white.png" />
+					<a href="https://www.facebook.com/multimediaart/" target=_blank><img
+							src="../../Public/Icons/facebook_white.png" /></a>
+					<a href="https://vimeo.com/multimediaart" target=_blank><img class="middle"
+							src="../../Public/Icons/vimeo_white.png" /></a>
+					<a href="https://www.instagram.com/busymakingmovies/" target=_blank><img
+							src="../../Public/Icons/instagram_white.png" /></a>
 				</div>
 			</div>
 
@@ -487,7 +537,8 @@
 				</div>
 
 				<div>
-					<img src="../../Public/Sponsors/FH_MMA.png" />
+					<a href="https://www.fh-salzburg.ac.at/disziplinen/medien-design-kunst/master-multimediaart/beschreibung/beschreibung/"
+						target=_blank><img src="../../Public/Sponsors/FH_MMA.png" /></a>
 				</div>
 
 				<div>
@@ -502,7 +553,6 @@
 				</div>
 
 			</div>
-
 
 
 
@@ -531,35 +581,17 @@
 	</f:section>
 	<f:section name="bodyScripts">
 		<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
-		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script> -->
-		<!-- <script src="{f:uri.resource(path: '3/js/bootstrap.min.js', package: 'Neos.Twitter.Bootstrap')}"></script> -->
-
-		<!-- <script src="../../Public/JavaScript/scrollmagic.js"></script> -->
-
 		<script>
-	// var scene = new ScrollMagic.Scene({})
-	// var start = scene.scrollOffset();
-	// var end = scene.scrollOffset() + scene.duration();
-	// console.log("the scene starts at", start, "and ends at", end);
-
-	// var triggerPosition = scene.triggerPosition();
-	// console.log(triggerPosition);
-
-	// init controller
-	// var controller = new ScrollMagic.Controller();
-
-	// // create a scene
-	// new ScrollMagic.Scene({
-    //     duration: 100,    // the scene should last for a scroll distance of 100px
-    //     offset: 50    // start this scene after scrolling for 50px
-    // })
-    // .setPin("boxline line") // pins the element for the the scene's duration
-    // .addTo(controller); // assign the scene to the controller
-
-	// console.log(controller.scrollPos());
-
-
-
+			// PayPal PopUp
+			function openPopUp() {
+				const element = document.getElementById("paypal-popup");
+			  element.classList.add("active");
+			}
+			function closePopUp() {
+				console.log("duast du wos");
+				const element = document.getElementById("paypal-popup");
+			  element.classList.remove("active");
+			}
 
 		</script>
 	</f:section>

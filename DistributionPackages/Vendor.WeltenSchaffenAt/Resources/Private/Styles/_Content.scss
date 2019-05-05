@@ -316,7 +316,7 @@
 
     .boxline9 {
         grid-column: 4 / span 1;
-        grid-row: 16 / span 2;
+        grid-row: 16 / span 1;
         .line{
             width: 4px;
             height: 100%;
@@ -344,30 +344,6 @@
             padding: 15px;
         }
     }
-
-    .box10 {
-        background: $main-red;
-        grid-column: 3 / span 3;
-        grid-row: 18 / span 1;
-        width: 200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-
-        p {
-            color: white;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 35px;
-            font-weight: 500;
-            padding: 10px;
-        }
-    }
-
-
-
 }
 
 

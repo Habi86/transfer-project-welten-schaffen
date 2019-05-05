@@ -78,6 +78,40 @@ prototype(Vendor.WeltenSchaffenAt:Mini) < prototype(Neos.Neos:Page) {
 
     }
 }
+# TODO: Make target_blank working when editing URLS then remove this:
+prototype(Vendor.WeltenSchaffenAt:MiniTmp) < prototype(Neos.Neos:Page) {
+
+    head {
+        stylesheets.site = Neos.Fusion:Template {
+            templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/MiniTmp.html'
+            sectionName = 'stylesheets'
+        }
+
+        javascripts.site = Neos.Fusion:Template {
+            templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/MiniTmp.html'
+            sectionName = 'headScripts'
+        }
+    }
+
+    body {
+        templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/MiniTmp.html'
+        sectionName = 'body'
+        parts {
+            menu = Neos.Neos:Menu
+        }
+
+        header = ${q(node).property('header')}
+        contentheader = ${q(node).property('contentheader')}
+        content = ${q(node).property('content')}
+        extrainfo = ${q(node).property('extrainfo')}
+
+        javascripts.site = Neos.Fusion:Template {
+            templatePath = 'resource://Vendor.WeltenSchaffenAt/Private/Templates/Page/MiniTmp.html'
+            sectionName = 'bodyScripts'
+        }
+
+    }
+}
 
 prototype(Vendor.WeltenSchaffenAt:TermsOfUse) < prototype(Neos.Neos:Page) {
 
@@ -106,5 +140,6 @@ prototype(Vendor.WeltenSchaffenAt:TermsOfUse) < prototype(Neos.Neos:Page) {
 
     }
 }
+
 include: NodeTypes/**/*
 include: NodeTypes/*.fusion

@@ -151,25 +151,82 @@
     main:
       type: 'Neos.Neos:ContentCollection'
 
-'Vendor.WeltenSchaffenAt:Carousel':
-  superTypes:
-    'Neos.Neos:Content': TRUE
-  childNodes:
-    carouselItems:
-      type: 'Neos.Neos:ContentCollection'
-  ui:
-    label: 'Carousel'
-    group: 'plugins'
-    icon: 'icon-picture'
-    inlineEditable: TRUE
-
-
 'Vendor.WeltenSchaffenAt:Mini':
   superTypes:
     'Neos.Neos:Document': true
   ui:
     icon: 'icon-compress'
     label: 'WeltenSchaffenAt Mini'
+  properties:
+    header:
+      type: string
+      ui:
+        label: 'header'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter title...'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+    contentheader:
+      type: string
+      ui:
+        label: 'contentheader'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter title...'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+    content:
+      type: string
+      ui:
+        label: 'content'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Enter contacts...'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+              a: TRUE
+    extrainfo:
+      type: string
+      ui:
+        label: 'extrainfo'
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inline:
+          editorOptions:
+            placeholder: 'Optional...'
+            formatting:
+              left: TRUE
+              center: TRUE
+              right: TRUE
+              strong: TRUE
+              em: TRUE
+
+# TODO: Make target_blank working when editing URLS then remove this:
+'Vendor.WeltenSchaffenAt:MiniTmp':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    icon: 'icon-compress'
+    label: 'WeltenSchaffenAt MiniTmp'
   properties:
     header:
       type: string
