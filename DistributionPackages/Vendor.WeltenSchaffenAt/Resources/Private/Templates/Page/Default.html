@@ -8,7 +8,7 @@
 		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
 		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Main.css', package: 'Vendor.WeltenSchaffenAt')}"
 			media="all" />
-		<!-- <link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'Neos.Twitter.Bootstrap')}" media="all" /> -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 	</f:section>
 
@@ -314,200 +314,117 @@
 						</div>
 					</div>
 				</div>
-
-
 			</div>
 
 
-
-
-
-			<!-- AWARDS -->
-			<!-- TODO: recode Slider - not working with links -.- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_dots2  -->
-			<div class="awards">
+			<!-- Awards NEW -->
+			<div class="awards-wrapper">
 				<div class="bg-bar"></div>
-				<div class="carousel">
+				<div class="awards-new">
 					<p class="title">Ausgewählte Arbeiten und Auszeichnungen:</p>
 					<hr />
-					<ul class="slides">
-						<input type="radio" name="radio-buttons" id="img-1" checked />
-						<li class="slide-container">
-							<div class="slide-image">
-								<p class="item-title"><span>«</span>MMA Showreel<span>»</span></p>
-								<p>Unser Fachbereich in 92 Sekunden.</p>
-								<div class="trailer">
-									<div class="txt">
-										<a href="https://vimeo.com/317072556" target=_blank>
-											<p>Trailer ansehen</p>
-										</a>
-									</div>
-									<div class="button"><a href="https://vimeo.com/317072556" target=_blank><img
-												src="../../Public/Icons/play.svg" /></a></div>
+					<div class="w3-content w3-display-container" style="width:100%">
+						<div class="mySlides">
+							<p class="item-title"><span>«</span>MMA Showreel<span>»</span></p>
+							<p>Unser Fachbereich in 92 Sekunden.</p>
+							<div class="trailer" style="cursor: pointer" onclick="window.open('https://vimeo.com/317072556')">
+								<div class="txt">
+									<p>Trailer ansehen</p>
 								</div>
+								<div class="button"><img src="../../Public/Icons/play.svg" /></div>
 							</div>
-
-							<div class="carousel-controls">
-								<label for="img-6" class="prev-slide">
-									<span>&lsaquo;</span>
-								</label>
-								<label for="img-2" class="next-slide">
-									<span>&rsaquo;</span>
-								</label>
-							</div>
-						</li>
-						<input type="radio" name="radio-buttons" id="img-2" />
-						<li class="slide-container">
-							<div class="slide-image">
-								<p class="item-title"><span>«</span>IRY<span>»</span></p>
-								<p>Urban Filmfestival 2018 : Best International Short</p>
-								<p>Cine Fest L.A. 2018 : Semi Finalist</p>
-								<p>Hollywood Inter. Movie Pictiure Film Festival 2018 : Official Selection Da Vinci </p>
-								<p>Filmfestival 2018 : Finalist</p>
-								<p>Virgine Spring Cinefest 2108 : Gold Award</p>
-								<p>40. Biberacher Filmfestspiele 2108 : Official Selection</p>
-
-								<div class="trailer">
-									<div class="txt">
-										<p>Trailer ansehen</p>
-									</div>
-									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
-								</div>
-							</div>
-
-							<div class="carousel-controls">
-								<label for="img-1" class="prev-slide">
-									<span>&lsaquo;</span>
-								</label>
-								<label for="img-3" class="next-slide">
-									<span>&rsaquo;</span>
-								</label>
-							</div>
-						</li>
-						<input type="radio" name="radio-buttons" id="img-3" />
-						<li class="slide-container">
-							<div class="slide-image">
-								<p class="item-title"><span>«</span>COLORS<span>»</span></p>
-								<p>
-									Internationales Film Forum Linz: Future der junge Film: Winner <br />
-									ARFF Barcelona :International Awards : 2108 Official Selection
-								</p>
-
-								<div class="trailer">
-									<div class="txt">
-										<p>Trailer ansehen</p>
-									</div>
-									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
-								</div>
-							</div>
-
-							<div class="carousel-controls">
-								<label for="img-2" class="prev-slide">
-									<span>&lsaquo;</span>
-								</label>
-								<label for="img-4" class="next-slide">
-									<span>&rsaquo;</span>
-								</label>
-							</div>
-						</li>
-						<input type="radio" name="radio-buttons" id="img-4" />
-						<li class="slide-container">
-							<div class="slide-image">
-								<p class="item-title"><span>«</span>TOMNIS FI<span>»</span></p>
-								<p>Best Commercial ACGA Award 2016<br />
-									Best Student Film ACGA Award<br />
-									Winner Future, der junge Film FilmForumLinz 2016<br />
-									Best Spot Foresight Festival 2016<br />
-									Winner Landespreis für Marketing und Kommunikation Salzburg 2016</p>
-
-								<div class="trailer">
-									<div class="txt">
-										<p>Trailer ansehen</p>
-									</div>
-									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
-								</div>
-							</div>
-							<div class="carousel-controls">
-								<label for="img-3" class="prev-slide">
-									<span>&lsaquo;</span>
-								</label>
-								<label for="img-5" class="next-slide">
-									<span>&rsaquo;</span>
-								</label>
-							</div>
-						</li>
-						<input type="radio" name="radio-buttons" id="img-5" />
-						<li class="slide-container">
-							<div class="slide-image">
-								<p class="item-title"><span>«</span>UFERLOS<span>»</span></p>
-								<p>
-									Worldfest Houston 2018: Remi Winner<br />
-									Festival of Nations : 2108 : Official Selection<br />
-									Ouchy Film Awards 2108 : Official Selection<br />
-									ARFF Berlin : 2108 : Official Selection<br />
-									Red Dirt International Film Festival 2108 : Official Selection
-								</p>
-
-								<div class="trailer">
-									<div class="txt">
-										<p>Trailer ansehen</p>
-									</div>
-									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
-								</div>
-							</div>
-							<div class="carousel-controls">
-								<label for="img-4" class="prev-slide">
-									<span>&lsaquo;</span>
-								</label>
-								<label for="img-6" class="next-slide">
-									<span>&rsaquo;</span>
-								</label>
-							</div>
-						</li>
-						<input type="radio" name="radio-buttons" id="img-6" />
-						<li class="slide-container">
-							<div class="slide-image">
-								<p class="item-title"><span>«</span>UNTER TOTEN<span>»</span></p>
-								<p>
-									Manchester Film Festival 2017 Best Student Film 2017<br />
-									Toronto Imdependent Film Awards 2017 Best Student Film 2017 Cannes Short Film Corner 2017<br />
-									Near Nazareth Film Festival 2017 Official Selection<br />
-									Festival of nations 2017 Bester Student Film<br />
-									Lift-Off Film Festival - New York 2017
-								</p>
-
-								<div class="trailer">
-									<div class="txt">
-										<p>Trailer ansehen</p>
-									</div>
-									<div class="button"><img src="../../Public/Icons/play.svg" /></div>
-								</div>
-							</div>
-							<div class="carousel-controls">
-								<label for="img-5" class="prev-slide">
-									<span>&lsaquo;</span>
-								</label>
-								<label for="img-1" class="next-slide">
-									<span>&rsaquo;</span>
-								</label>
-							</div>
-						</li>
-						<div class="carousel-dots">
-							<label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-							<label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-							<label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-							<label for="img-4" class="carousel-dot" id="img-dot-4"></label>
-							<label for="img-5" class="carousel-dot" id="img-dot-5"></label>
-							<label for="img-6" class="carousel-dot" id="img-dot-5"></label>
-
 						</div>
-					</ul>
+						<div class="mySlides">
+							<p class="item-title"><span>«</span>IRY<span>»</span></p>
+							<p>Urban Filmfestival 2018 : Best International Short</p>
+							<p>Cine Fest L.A. 2018 : Semi Finalist</p>
+							<p>Hollywood Inter. Movie Pictiure Film Festival 2018 : Official Selection Da Vinci </p>
+							<p>Filmfestival 2018 : Finalist</p>
+							<p>Virgine Spring Cinefest 2108 : Gold Award</p>
+							<p>40. Biberacher Filmfestspiele 2108 : Official Selection</p>
+							<div class="trailer" style="cursor: pointer" onclick="window.open('https://vimeo.com/273771682')">
+								<div class="txt">
+									<p>Trailer ansehen</p>
+								</div>
+								<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+							</div>
+						</div>
+						<div class="mySlides">
+							<p class="item-title"><span>«</span>COLORS<span>»</span></p>
+							<p>
+								Internationales Film Forum Linz: Future der junge Film: Winner <br />
+								ARFF Barcelona :International Awards : 2108 Official Selection
+							</p>
+							<div class="trailer" style="cursor: pointer" onclick="window.open('https://vimeo.com/291899301')">
+								<div class="txt">
+									<p>Trailer ansehen</p>
+								</div>
+								<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+							</div>
+						</div>
+						<div class="mySlides">
+							<p class="item-title"><span>«</span>OMNIS FI<span>»</span></p>
+							<p>Best Commercial ACGA Award 2016<br />
+								Best Student Film ACGA Award<br />
+								Winner Future, der junge Film FilmForumLinz 2016<br />
+								Best Spot Foresight Festival 2016<br />
+								Winner Landespreis für Marketing und Kommunikation Salzburg 2016</p>
+							<div class="trailer" style="cursor: pointer" onclick="window.open('https://vimeo.com/129376439')">
+								<div class="txt">
+									<p>Trailer ansehen</p>
+								</div>
+								<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+							</div>
+						</div>
+						<div class="mySlides">
+							<p class="item-title"><span>«</span>UFERLOS<span>»</span></p>
+							<p>
+								Worldfest Houston 2018: Remi Winner<br />
+								Festival of Nations : 2108 : Official Selection<br />
+								Ouchy Film Awards 2108 : Official Selection<br />
+								ARFF Berlin : 2108 : Official Selection<br />
+								Red Dirt International Film Festival 2108 : Official Selection
+							</p>
+							<div class="trailer" style="cursor: pointer" onclick="window.open('https://vimeo.com/213985127')">
+								<div class="txt">
+									<p>Trailer ansehen</p>
+								</div>
+								<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+							</div>
+						</div>
+						<div class="mySlides">
+							<p class="item-title"><span>«</span>UNTER TOTEN<span>»</span></p>
+							<p>
+								Manchester Film Festival 2017 Best Student Film 2017<br />
+								Toronto Imdependent Film Awards 2017 Best Student Film 2017 Cannes Short Film Corner 2017<br />
+								Near Nazareth Film Festival 2017 Official Selection<br />
+								Festival of nations 2017 Bester Student Film<br />
+								Lift-Off Film Festival - New York 2017
+							</p>
+							<div class="trailer" style="cursor: pointer" onclick="window.open('https://vimeo.com/181485162')">
+								<div class="txt">
+									<p>Trailer ansehen</p>
+								</div>
+								<div class="button"><img src="../../Public/Icons/play.svg" /></div>
+							</div>
+						</div>
+						<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle center"
+							style="width:100%">
+							<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+							<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+						</div>
+						<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+							style="width:100%">
+							<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+							<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+							<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+							<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+							<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+							<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+						</div>
+					</div>
 				</div>
 			</div>
-
-
-
-
-
 
 			<div class="contact-us">
 				<div class="content">
@@ -552,30 +469,26 @@
 					<img src="../../Public/Sponsors/Haus_der_Natur.png" />
 				</div>
 
+
+				<!-- {content.main -> f:format.raw()} -->
+				<!-- {content.carouselItems -> f:format.raw()} -->
+
+				<!-- <f:comment>
+				If you enabled the "sidebar" content area in your NodeType configuration and Fusion, you can uncomment this
+				section to actually render in in your output. Remove the "f:comment" tag and this text, and adjust the markup as you
+				like.
+
+				{content.sidebar -> f:format.raw()}
+				</f:comment> -->
+
 			</div>
 
 
-
-			<!-- {content.main -> f:format.raw()} -->
-			<!-- {content.carouselItems -> f:format.raw()} -->
-
-			<!-- <f:comment>
-		If you enabled the "sidebar" content area in your NodeType configuration and Fusion, you can uncomment this
-		section to actually render in in your output. Remove the "f:comment" tag and this text, and adjust the markup as you
-		like.
-
-		{content.sidebar -> f:format.raw()}
-	</f:comment> -->
-
-		</div>
-
-
-		<div class="footer">
-			<p class=heading>WELTEN SCHAFFEN</p>
-			<p class=sub>Eine Initiative zur Filmförderung der FH Salzburg</p>
-			<a href="/impressum.html">Impressum</a> | <a href="/datenschutz.html">Datenschutz</a>
-
-		</div>
+			<div class="footer">
+				<p class=heading>WELTEN SCHAFFEN</p>
+				<p class=sub>Eine Initiative zur Filmförderung der FH Salzburg</p>
+				<a href="/impressum.html">Impressum</a> | <a href="/datenschutz.html">Datenschutz</a>
+			</div>
 
 
 	</f:section>
@@ -585,13 +498,42 @@
 			// PayPal PopUp
 			function openPopUp() {
 				const element = document.getElementById("paypal-popup");
-			  element.classList.add("active");
+				element.classList.add("active");
 			}
 			function closePopUp() {
 				console.log("duast du wos");
 				const element = document.getElementById("paypal-popup");
-			  element.classList.remove("active");
+				element.classList.remove("active");
 			}
+
+			// Awards
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+				showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				if (n > x.length) { slideIndex = 1 }
+				if (n < 1) { slideIndex = x.length }
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" w3-white", "");
+				}
+				x[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " w3-white";
+			}
+
 
 		</script>
 	</f:section>
