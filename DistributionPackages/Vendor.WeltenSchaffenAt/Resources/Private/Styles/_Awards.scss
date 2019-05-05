@@ -388,3 +388,135 @@
     }
   }
 }
+
+// Awards Slider 4 Datenschutz
+.wrapper.terms {
+  .awards-wrapper {
+    position: relative;
+    margin-top: 0;
+      font-size: 12px;
+    h1 {
+      font-family: "Montserrat";
+      text-transform: inherit;
+      font-weight: bold;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    p {
+      font-family: "Montserrat";
+      font-size: 12px;
+      color: $white;
+    }
+    .bg-bar {
+      background: $main-blue;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 150px;
+      z-index: -1;
+    }
+
+    .awards-new {
+      width: 100%;
+      height: 400px;
+      margin: 50px auto;
+      background: $main-red;
+      margin-top: 0;
+
+      p {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .title {
+        font-size: 18px;
+        padding: 15px;
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid $txtwhitish;
+        width: 100px;
+        margin: 0 auto;
+      }
+
+      .item-title {
+        font-size: 35px;
+        margin-bottom: 20px;
+        span {
+          font-size: 30px;
+        }
+      }
+
+      .mySlides {
+        display: none;
+      }
+      .w3-left,
+      .w3-right,
+      .w3-badge {
+        cursor: pointer;
+      }
+      .w3-badge {
+        height: 13px;
+        width: 13px;
+        padding: 0;
+      }
+
+      .w3-display-bottommiddle.center {
+        cursor: default;
+        width: 570px;
+        height: 150px;
+        top: 40%;
+      }
+      .w3-display-bottommiddle {
+        bottom: -50px;
+      }
+
+      .mySlides {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        padding-bottom: 0;
+
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .w3-content {
+        max-width: inherit;
+        margin-top: 0;
+        height: 330px;
+      }
+
+      .w3-container {
+        padding: 0;
+      }
+
+      .w3-hover-text-khaki {
+        width: 5%;
+        background: $main-blue;
+        height: 150px;
+        line-height: 150px;
+        font-size: 40px;
+        color: $main-red;
+
+        &:hover {
+          color: white !important;
+        }
+      }
+      .w3-section {
+        margin: 0 !important;
+      }
+    }
+  }
+}
