@@ -199,43 +199,44 @@
 					<div class="inner-box1"></div>
 					<div class="inner-box2"></div>
 
-					<!-- VIDEO CAROUSEL -->
-					<!-- Nice overlay: https://jsfiddle.net/svArtist/9ewogtwL/  -->
-					<div class="video-carousel-wrapper">
-						<div class="container">
-							<div class="carousel">
-								<input type="radio" id="carousel-1" name="carousel[]" checked>
-								<input type="radio" id="carousel-2" name="carousel[]">
-								<input type="radio" id="carousel-3" name="carousel[]">
-								<ul class="carousel__items">
-									<li class="carousel__item">
-										<video controls>
-											<source src="../../Public/Videos/Welten-Schaffen_ Star Wars.mp4" type="video/mp4">
-											Your browser does not support HTML5 video.
-										</video>
-									</li>
-									<li class="carousel__item">
-										<video controls>
-											<source src="../../Public/Videos/Welten-Schaffen_Titanic.mp4" type="video/mp4">
-											Your browser does not support HTML5 video.
-										</video>
-									</li>
-									<li class="carousel__item">
-										<video controls>
-											<source src="../../Public/Videos/Welten-Schaffen_Alice.mp4" type="video/mp4">
-											Your browser does not support HTML5 video.
-										</video>
-									</li>
-								</ul>
-
-								<div class="carousel__nav">
-									<label for="carousel-1">01</label>
-									<label for="carousel-2">02</label>
-									<label for="carousel-3">03</label>
+						<!-- Trailer Slider  -->
+					<div class="trailer-wrapper">
+						<div class="videos-wrapper">
+							<div class="w3-content w3-display-container" style="width:100%">
+								<div class="trailer-mySlides">
+									<video controls>
+										<source src="../../Public/Videos/Welten-Schaffen_Star_Wars.mp4" type="video/mp4">
+										Your browser does not support HTML5 video.
+									</video>
+								</div>
+								<div class="trailer-mySlides">
+									<video controls>
+										<source src="../../Public/Videos/Welten-Schaffen_Titanic.mp4" type="video/mp4">
+										Your browser does not support HTML5 video.
+									</video>
+								</div>
+								<div class="trailer-mySlides">
+									<video controls>
+										<source src="../../Public/Videos/Welten-Schaffen_Alice.mp4" type="video/mp4">
+										Your browser does not support HTML5 video.
+									</video>
 								</div>
 							</div>
+							<div class="w3-center w3-container w3-section w3-large w3-display-bottommiddle">
+									<span class="trailer-demo w3-transparent w3-override"
+										onclick="trailerCurrentDiv(1)">01</span>
+									<span class="trailer-demo w3-transparent w3-override"
+										onclick="trailerCurrentDiv(2)">02</span>
+									<span class="trailer-demo w3-transparent w3-override"
+										onclick="trailerCurrentDiv(3)">03</span>
+								</div>
 						</div>
 					</div>
+
+
+
+
+
 				</div>
 
 				<div class="box box8"></div>
@@ -532,6 +533,34 @@
 				}
 				x[slideIndex - 1].style.display = "block";
 				dots[slideIndex - 1].className += " w3-white";
+			}
+
+			// Trailer
+			var trailerSlideIndex = 1;
+			trailerShowDivs(trailerSlideIndex);
+
+			function trailerPlusDivs(n) {
+				trailerShowDivs(trailerSlideIndex += n);
+			}
+
+			function trailerCurrentDiv(n) {
+				trailerShowDivs(trailerSlideIndex = n);
+			}
+
+			function trailerShowDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("trailer-mySlides");
+				var dots = document.getElementsByClassName("trailer-demo");
+				if (n > x.length) { trailerSlideIndex = 1 }
+				if (n < 1) { trailerSlideIndex = x.length }
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" w3-white", "");
+				}
+				x[trailerSlideIndex - 1].style.display = "block";
+				dots[trailerSlideIndex - 1].className += " w3-white";
 			}
 
 

@@ -3,9 +3,10 @@
 @import "Content";
 @import "ArrowBounce";
 @import "Awards";
-@import "Video_Carousel";
+// @import "Video_Carousel";
 @import "Mini";
-@import "_Terms_of_use.scss";
+@import "Terms_of_use.scss";
+@import "Trailer";
 
 p,
 a {
@@ -163,9 +164,9 @@ body {
     }
     .inner-box2 {
       grid-column: 3;
-      grid-row: 3 / span 1;
+      grid-row: 2 / span 1;
       align-self: end;
-      max-height: 115px;
+      max-height: 140px;
       hr {
         height: 4px;
         border: none;
