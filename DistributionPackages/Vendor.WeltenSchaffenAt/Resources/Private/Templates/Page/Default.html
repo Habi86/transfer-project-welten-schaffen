@@ -206,28 +206,31 @@
 						<div class="videos-wrapper">
 							<div class="w3-content w3-display-container" style="width:100%">
 								<div class="trailer-mySlides">
-									<video controls>
+									<video id="trailer1" controls>
 										<source src="../../Public/Videos/Welten-Schaffen_Star_Wars.mp4" type="video/mp4">
 										Your browser does not support HTML5 video.
 									</video>
 								</div>
 								<div class="trailer-mySlides">
-									<video controls>
+									<video id="trailer2" controls>
 										<source src="../../Public/Videos/Welten-Schaffen_Titanic.mp4" type="video/mp4">
 										Your browser does not support HTML5 video.
 									</video>
 								</div>
 								<div class="trailer-mySlides">
-									<video controls>
+									<video id="trailer3" controls>
 										<source src="../../Public/Videos/Welten-Schaffen_Alice.mp4" type="video/mp4">
 										Your browser does not support HTML5 video.
 									</video>
 								</div>
 							</div>
 							<div class="w3-center w3-container w3-section w3-large w3-display-bottommiddle">
-								<span class="trailer-demo w3-transparent w3-override" onclick="trailerCurrentDiv(1)">01</span>
-								<span class="trailer-demo w3-transparent w3-override" onclick="trailerCurrentDiv(2)">02</span>
-								<span class="trailer-demo w3-transparent w3-override" onclick="trailerCurrentDiv(3)">03</span>
+								<span class="trailer-demo w3-transparent w3-override"
+									onclick="trailerCurrentDiv(1); resetTrailer(1);">01</span>
+								<span class="trailer-demo w3-transparent w3-override"
+									onclick="trailerCurrentDiv(2); resetTrailer(2);">02</span>
+								<span class="trailer-demo w3-transparent w3-override"
+									onclick="trailerCurrentDiv(3); resetTrailer(3);">03</span>
 							</div>
 						</div>
 					</div>
@@ -562,6 +565,36 @@
 				}
 				x[trailerSlideIndex - 1].style.display = "block";
 				dots[trailerSlideIndex - 1].className += " w3-white";
+			}
+
+			// reset Trailer onClick
+			function resetTrailer(num) {
+				let trailer = document.getElementById('trailer1');
+				let trailer2 = document.getElementById('trailer2');
+				let trailer3 = document.getElementById('trailer3');
+
+				switch (num) {
+					case 1:
+						trailer2.pause();
+						trailer3.pause();
+						trailer2.currentTime = 0;
+						trailer3.currentTime = 0;
+						break;
+					case 2:
+						trailer.pause();
+						trailer3.pause();
+						trailer.currentTime = 0;
+						trailer3.currentTime = 0;
+						break;
+					case 3:
+						trailer.pause();
+						trailer2.pause();
+						trailer.currentTime = 0;
+						trailer2.currentTime = 0;
+						break;
+					default:
+						break;
+				}
 			}
 
 

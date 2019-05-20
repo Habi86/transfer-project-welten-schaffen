@@ -217,8 +217,8 @@ body {
         vertical-align: middle;
         color: $white;
         text-transform: uppercase;
-        font-family: "Roboto Condensed";
-        font-size: 8px;
+        font-family: "Roboto Condensed Bold";
+        font-size: 10px;
         letter-spacing: 2px;
       }
     }
@@ -279,7 +279,8 @@ body {
         color: white;
         text-align: center;
         text-transform: uppercase;
-        font-size: 35px;
+        // font-size: 35px;
+        font-size: 25px;
         font-weight: 500;
         padding: 10px;
       }
@@ -430,13 +431,15 @@ body {
     }
     p {
       font-family: "Roboto Condensed";
-      font-size: 20px;
+      // font-size: 20px;
+      font-size: 16px;
       margin-top: 20px;
     }
 
     a {
       font-family: "Roboto Condensed";
-      font-size: 20px;
+      // font-size: 20px;
+      font-size: 16px;
       text-decoration: none;
 
       &:hover {
